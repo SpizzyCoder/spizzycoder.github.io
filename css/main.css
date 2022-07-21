@@ -1,0 +1,26 @@
+#rust {
+  color: #FF6600;
+}
+
+#c {
+  color: lightgray;
+}
+
+.card {
+  width: 500px !important;
+  text-decoration: none !important;
+  transition: 0.2s;
+  border: none !important;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.link-info {
+  text-decoration: none;
+}
+
+.shadow-lg {
+  box-shadow: 0px 0px 20px rgb(20,20,20) !important;
+}

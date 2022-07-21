@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpizzyCoder Website | ODisk</title>
+  <link rel="icon" type="image/x-icon" href="imgs/spizzycoder-logo.svg">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-dark d-flex flex-column h-100">
+  <main class="text-center text-white">
+
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <img class="mx-auto mb-4 rounded-3 border border-2" src="imgs/odisk_logo.svg" alt="Raw Read Raw Write logo" width="150">
+      <h1 class="display-5 fw-bold text-white">ODisk</h1>
+      <a href="https://github.com/spizzycoder/odisk" target="_blank"
+        class="btn btn-outline-info btn-lg px-4 fw-bold">Contribute</a>
+    </div>
+    <p class="container">
+      ODisk stands for <b><u>O</u></b>verwrite <b><u>Disk</u></b><br>
+      Unfortunately, "delete" is not enough to safely remove data on a hard disk.
+      If you delete data in the traditional way, this space is only freed in the file system.
+      This means that someone who knows that there was a file on this area (even if it was deleted) can restore it.
+      You don't even need to know where the file was, you can simply scan the entire drive and recover "deleted" files.
+      To recover files, you can use the <a href="https://www.cgsecurity.org/wiki/PhotoRec" class="link-info">photorec</a> tool.
+      You can specify the drive from which you want to recover files, specify the destination of the recovered files and start the recovery.
+      To safely remove data, you should overwrite the storage medium with data.
+      There is also a Unix tool called <a href="https://git.savannah.gnu.org/cgit/coreutils.git/tree/src/shred.c" target="_blank" class="link-info">shred</a> for this task.
+      I have programmed ODisk at the beginning of my Rust time.
+      It is a simple tool, but it can safely overwrite data from the hard disk.
+    </p>
+  </main>
+</body>
+
+</html>

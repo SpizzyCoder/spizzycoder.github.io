@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpizzyCoder Website | Vls</title>
+  <link rel="icon" type="image/x-icon" href="imgs/spizzycoder-logo.svg">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-dark d-flex flex-column h-100">
+  <main class="text-center text-white">
+
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <img class="mx-auto mb-4 rounded-3 border border-2" src="imgs/vls_logo.svg" alt="Raw Read Raw Write logo" width="150">
+      <h1 class="display-5 fw-bold text-white">vls</h1>
+      <a href="https://github.com/spizzycoder/vls" target="_blank"
+        class="btn btn-outline-info btn-lg px-4 fw-bold">Contribute</a>
+    </div>
+    <p class="container">
+        The "v" in "vls" is a randomly chosen letter.<br>
+        If you often work with the console and also work on GNU/Linux and Windows, you probably want a unified solution for listing files.
+        If you have been working on a Windows computer for a long time and the first few times you write "dir" instead of "ls" on a GNU/Linux system and vice versa, this is annoying.
+
+        Furthermore, "ls" and "dir" do not generate the same output.
+        In most GNU/Linux distributions, "ls" gives colored output.
+        While "dir" really only provides white output.
+        With these "problems" in mind I wanted a unified solution.
+        First I researched if there are crossplatform Rust libraries to generate colored output on GNU/Linux as well as on Windows.
+        With this research I found <a href="https://crates.io/crates/termcolor" class="link-info">termcolor</a>.
+        This is a Rust library with which I can provide colored output on both systems without having to manually pay attention to the operating system in the code.
+
+        Here is an example of how vls output looks like:
+        <img src="imgs/vls-example.png" class="shadow-lg img-fluid mt-5 mb-5 rounded-3" alt="vls example">
+    </p>
+  </main>
+</body>
+
+</html>

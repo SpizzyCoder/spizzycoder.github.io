@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpizzyCoder Website | SFManager</title>
+  <link rel="icon" type="image/x-icon" href="imgs/spizzycoder-logo.svg">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-dark d-flex flex-column h-100">
+  <main class="text-center text-white">
+
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <img class="mx-auto mb-4 rounded-3 border border-2" src="imgs/sfm_logo.svg" alt="Simple File Manager logo" width="150">
+      <h1 class="display-5 fw-bold text-white">SFManager</h1>
+      <a href="https://github.com/spizzycoder/sfmanager" target="_blank"
+        class="btn btn-outline-info btn-lg px-4 fw-bold">Contribute</a>
+    </div>
+    <p class="container">
+      SFManager stands for <b><u>S</u></b>imple <b><u>F</u></b>ile <b><u>Manager</u></b>.<br>
+      There are a lot file managers available like
+      <a href="https://invent.kde.org/system/dolphin" class="link-info" target="_blank">dolphin</a>,
+      <a href="https://gitlab.xfce.org/xfce/thunar" class="link-info" target="_blank">thunar</a>,
+      <a href="https://gitlab.gnome.org/GNOME/nautilus" class="link-info" target="_blank">nautilus</a>,
+      <a href="https://github.com/linuxmint/nemo" class="link-info" target="_blank">nemo</a>,
+      etc.
+      But I wanted a solution that works for the desktop as well as for the servers.
+      There are some console based file managers like
+      <a href="https://github.com/jarun/nnn" class="link-info" target="_blank">nnn</a>,
+      <a href="https://github.com/MidnightCommander/mc" class="link-info" target="_blank">midnight commander</a>,
+      <a href="https://github.com/ranger/ranger" class="link-info" target="_blank">ranger</a>,
+      <a href="https://github.com/vifm/vifm" class="link-info" target="_blank">vifm</a>,
+      etc.
+      I also wanted a simple but powerful file manager.
+      While the file managers listed previously are mostly simple and powerful, none of these file managers I liked 100%.
+      Of course the incentive was there to program one myself.
+      If you program one yourself, you know exactly how the filemanager behaves in different situations.
+      I mean it can't be that difficult to program a file manager anyway (or so I thought).
+      With all this in mind, I thought about what the file manager should be able to do.
+      Basically, a file manager should only be able to <u>create</u>, <u>delete</u>, <u>open</u>, <u>move</u> and <u>copy</u> files/folders.
+
+      I was thinking how the filemanager should look like.
+      I liked the principle of a double panel file manager.
+      A double panel file manager is very practical in my opinion.
+      With a normal file manager I often found myself starting two instances and copying or moving something from one to the other.
+      With a double panel filemanager you don't have to do such things.
+      One file manager I like the most is <a href="https://github.com/doublecmd/doublecmd" class="link-info" target="_blank">doublecmd</a>.
+      Doublecmd is a double panel file manager.
+      It is written in Pascal.
+
+      <img src="imgs/doublecmd.png" alt="Doublecmd" class="img-fluid shadow-lg mt-5 mb-5">
+
+      This is a typical double panel file manager.
+      At the bottom of the window it has different operations that you can perform.
+      These are also bound to the F keys.
+      You can even have multiple tabs open on one panel.
+      My file manager should have many practical functions.
+      For example, I could include the <a href="https://github.com/SpizzyCoder/bulkrename" class="link-info">bulkrename</a> tool to rename multiple files and so on.
+      This is my first big project that I will program in Rust.
+    </p>
+  </main>
+</body>
+
+</html>

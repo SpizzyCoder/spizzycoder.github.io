@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpizzyCoder Website | RrRw</title>
+  <link rel="icon" type="image/x-icon" href="imgs/spizzycoder-logo.svg">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-dark d-flex flex-column h-100">
+  <main class="text-center text-white">
+
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <img class="mx-auto mb-4 rounded-3 border border-2" src="imgs/rrrw_logo.svg" alt="Raw Read Raw Write logo" width="150">
+      <h1 class="display-5 fw-bold text-white">RrRw</h1>
+      <a href="https://github.com/spizzycoder/rrrw" target="_blank"
+        class="btn btn-outline-info btn-lg px-4 fw-bold">Contribute</a>
+    </div>
+    <p class="container">
+      RrRw stands for <b><u>R</u></b>aw <b><u>R</u></b>ead <b><u>R</u></b>aw <b><u>W</u></b>rite.<br>
+      I found myself burning ISO's to usb's.
+      For this task I used the Unix tool <a href="https://git.savannah.gnu.org/cgit/coreutils.git/tree/src/dd.c" target="_blank" class="link-info">dd</a>.
+      After some time I asked myself if I could program such a "simple" tool myself.
+      I have programmed rrrw at the beginning of my Rust time.
+      To teach myself Rust I had to program things.
+      I started with simple programs and rrrw was one of them.
+
+      This program shows during copying how many bytes, kilobytes, megabytes etc it has copied.
+      I also wanted unbuffered writing.
+      Buffered writing is often (if not always) more performant.
+      But if you write 1MB blocks and synchronize the stream after each write, you hardly notice the difference.
+      With this, I can expect a consistent write rate.
+      With dd I noticed that at the end, after it seems to have written all the bytes, it still "waits" for a while (probably synchronizes the data when closing the file).
+      I didn't like this behavior.
+      If I synchronize the data after each block, the file closing (data synchronization) is much faster.
+    </p>
+  </main>
+</body>
+
+</html>
