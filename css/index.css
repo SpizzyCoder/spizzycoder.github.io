@@ -1,0 +1,8 @@
+@media only screen and (max-width: 767px) {
+  .card img {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
